@@ -1,0 +1,6 @@
+<h2>Catz!</h2>
+<h3>Here is a list of all of the catz. Select a cat to learn more about it.</h3>
+<div ng-controller="catCtrl" ng-repeat="cat in catz">
+    <a ui-sref="catbyid({id: cat.breed})"><h2>{{cat.breed}}</h2></a>
+    <img ng-src={{cat.image}} alt="">
+</div>
